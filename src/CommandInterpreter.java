@@ -1,25 +1,25 @@
 public class CommandInterpreter implements ICommandInterpreter {
 	/* Interpreter messages */
-	private static final String INVALID_IN_STATE 		= "-ERR command invalid in the current state";
-	private static final String INVALID_ARG_TYPE 		= "-ERR invalid argument type";
-	private static final String TOO_MANY_ARGS 			= "-ERR too many command arguments";
-	private static final String TOO_FEW_ARGS 			= "-ERR too few command arguments";
-	private static final String INCORRECT_NUM_ARGS 		= "-ERR incorrect number of arguments";
-	private static final String INVALID_COMMAND 		= "-ERR invalid command";
-	private static final String USER_OK 				= "+OK found user account";
-	private static final String USER_LOCKED 			= "-ERR the maildrop is currently locked";
-	private static final String USER_NOT_FOUND 			= "-ERR user not found";
-	private static final String USER_COMMAND_NOT_SENT 	= "-ERR USER command not sent";
-	private static final String PASSWORD_OK 			= "+OK user authorised";
-	private static final String PASSWORD_INCORRECT 		= "-ERR password incorrect";
-	private static final String QUIT_OK 				= "+OK quitting";
-	private static final String NOOP_OK 				= "+OK no operation";
-	private static final String MESSAGE_NOT_FOUND 		= "-ERR message not found";
+	private static final String INVALID_IN_STATE = "-ERR command invalid in the current state";
+	private static final String INVALID_ARG_TYPE = "-ERR invalid argument type";
+	private static final String TOO_MANY_ARGS = "-ERR too many command arguments";
+	private static final String TOO_FEW_ARGS = "-ERR too few command arguments";
+	private static final String INCORRECT_NUM_ARGS = "-ERR incorrect number of arguments";
+	private static final String INVALID_COMMAND = "-ERR invalid command";
+	private static final String USER_OK = "+OK found user account";
+	private static final String USER_LOCKED = "-ERR the maildrop is currently locked";
+	private static final String USER_NOT_FOUND = "-ERR user not found";
+	private static final String USER_COMMAND_NOT_SENT = "-ERR USER command not sent";
+	private static final String PASSWORD_OK = "+OK user authorised";
+	private static final String PASSWORD_INCORRECT = "-ERR password incorrect";
+	private static final String QUIT_OK = "+OK quitting";
+	private static final String NOOP_OK = "+OK no operation";
+	private static final String MESSAGE_NOT_FOUND = "-ERR message not found";
 	private static final String MESSAGE_ALREADY_DELETED = "-ERR message already deleted";
-	private static final String MESSAGE_MARKED 			= "+OK message marked as deleted";
-	private static final String RESET_OK 				= "+OK deleted messages restored";
-	private static final String INVALID_ARG_VAL 		= "-ERR invalid argument value";
-	private static final String QUIT_ERROR 				= "-ERR some messages were not deleted";
+	private static final String MESSAGE_MARKED = "+OK message marked as deleted";
+	private static final String RESET_OK = "+OK deleted messages restored";
+	private static final String INVALID_ARG_VAL = "-ERR invalid argument value";
+	private static final String QUIT_ERROR = "-ERR some messages were not deleted";
 
 	private State state;
 	private IDatabase database;
