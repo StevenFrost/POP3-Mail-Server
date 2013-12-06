@@ -10,6 +10,7 @@ A minimal implementation of a POP3 Mail Server, developed for the G52APR module 
  * NOOP
  * UIDL
  * DELE
+ * RETR
  * TOP
 
 Using the server
